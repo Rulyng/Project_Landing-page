@@ -16,7 +16,27 @@
 
 <body>
     <div class="wraper">
-        <header class="header">header</header>
+        <header class="header">
+            <div class="container header-container">
+                <img class="logo" src="img/logo (1).png" alt="">
+                <nav class="header__nav">
+<div class="header__nav-icon"><svg width="34" height="22" viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line y1="1" x2="34" y2="1" stroke="black" stroke-width="2"/>
+    <line y1="11" x2="34" y2="11" stroke="black" stroke-width="2"/>
+    <line y1="21" x2="34" y2="21" stroke="black" stroke-width="2"/>
+    </svg></div>
+
+                    <ul class="header__nav-row">
+                        <li class="header__nav-item header__nav-item--active"><a class="header__nav-link"
+                                href="">home</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="">about</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="">works</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="">blog</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
         <!-- section hero -->
         <section class="hero">
@@ -74,8 +94,8 @@
         <!-- section post -->
         <section class="post">
             <div class="container post__contain">
-                <div class="sub-title post__title">
-                    <h2 class="post__title-name">Latest Posts</h2>
+                <div class="post__title">
+                    <h2 class="sub-title post__title-name">Latest Posts</h2>
                     <a class="post__title-view-link" href="#">View All
                         <span class="link-arrow"><svg width="24" height="12" viewBox="0 0 24 12" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -129,6 +149,39 @@
             </div>
         </section>
         <!-- section post End -->
+
+        <!-- section popular -->
+
+        <section class="popular">
+            <div class="container popular__contain">
+                <div class="popular__title">
+                    <h2 class="sub-title popular__title-name">The Most Popular</h2>
+                    <a class="popular__title-view-link" href="#">View All
+                        <span class="link-arrow"><svg width="24" height="12" viewBox="0 0 24 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.5303 6.53033C23.8232 6.23744 23.8232 5.76257 23.5303 5.46967L18.7574 0.696701C18.4645 0.403807 17.9896 0.403807 17.6967 0.696701C17.4038 0.989594 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM-6.7177e-08 6.75L23 6.75L23 5.25L6.7177e-08 5.25L-6.7177e-08 6.75Z"
+                                    fill="#7B7B7B" />
+                            </svg></span></a>
+
+                </div>
+                <div class="popular__row">
+<div class="popular__item">
+    <img class="popular__img" src="" alt="">
+    <div class="popular__content">
+        <div class="popular__description">
+            <div class="popular__description-text"></div>
+            <div class="popular__description-date"></div>
+        </div>
+        
+
+    </div>
+</div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- section popular End-->
 
     </div>
 </body>

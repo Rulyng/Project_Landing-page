@@ -1,6 +1,8 @@
 /* font-family: 'Lato', sans-serif;
 font-family: 'Red Hat Display', sans-serif; */
 
+/* Global styles */
+
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +16,10 @@ img {
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 .container {
@@ -59,9 +65,89 @@ a {
   .title {
     font-size: 30px;
   }
+  .blog__link-arrow {
+    display: none;
+  }
 }
 
-/* Global styles */
+/* Global styles End*/
+
+/* section header */
+
+.header-container {
+  padding: 44px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 42px;
+}
+
+.logo {
+  max-width: 142px;
+  height: 12px;
+}
+
+.header__nav-link {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.header__nav-item {
+  border-bottom: 1px solid transparent;
+}
+
+.header__nav-item--active {
+  border-bottom: 1px solid black;
+  width: fit-content;
+}
+
+.header__nav-item:hover {
+  border-bottom: 1px solid black;
+}
+
+.header__nav-icon {
+  display: none;
+}
+
+/* tablete size */
+@media (max-width: 1200px) {
+  .header-container {
+    max-width: 700px;
+    padding: 24px 0;
+  }
+  .logo {
+    max-width: 145px;
+  }
+
+  .header__nav-row {
+    display: none;
+  }
+  .header__nav-icon {
+    display: block;
+  }
+}
+
+/* mobile size */
+@media (max-width: 576px) {
+  .header-container  {
+    padding: 24px 10px;
+  }
+  
+}
+
+/* section header End */
 
 /* section hero  */
 
@@ -213,9 +299,7 @@ a {
     flex-direction: column-reverse;
     gap: 30px;
   }
-  .blog__link-arrow {
-    display: none;
-  }
+  
 }
 
 /* section blog End */
@@ -248,14 +332,14 @@ a {
   gap: 30px;
 }
 
-.post__item{
+.post__item {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 .post__img {
   max-width: 370px;
-  }
+}
 
 .post__content {
   max-width: 370px;
@@ -285,7 +369,7 @@ a {
   font-size: 16px;
   line-height: 27px;
   font-family: "Lato", sans-serif;
-   color: #565656;
+  color: #565656;
 }
 
 /* tablete size */
@@ -298,7 +382,7 @@ a {
     flex-direction: column;
     gap: 30px;
   }
-   .post__item {
+  .post__item {
     flex-direction: row;
     gap: 20px;
   }
@@ -312,15 +396,13 @@ a {
   .post__content {
     max-width: 340px;
   }
- 
- 
 }
 
 /* mobile size */
 @media (max-width: 576px) {
   .post {
     max-width: 300px;
-      }
+  }
   .post__title {
     flex-direction: column;
     align-items: flex-start;
