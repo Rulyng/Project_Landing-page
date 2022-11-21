@@ -615,7 +615,7 @@ li {
   padding: 70px 0 30px;
 }
 
-.fooetr__content {
+.footer__content {
   display: flex;
   justify-content: space-between;
 }
